@@ -306,6 +306,30 @@ let recipeAdd = (/** @type {Internal.RecipesEventJS} */ event) => {
     }
   })
 
+  //Thorium Reactors Start
+	event.recipes.gtceu.alloy_smelter('blasted_stone')
+		.itemInputs(
+			'minecraft:smooth_stone'
+			'#minecraft:coals'
+		)
+		.itemOutputs(
+			'thoriumreactors:blasted_stone'
+		)
+		.duration(60)
+		.EUt(EV)
+		   
+	event.recipes.gtceu.alloy_smelter('blasted_iron')
+		.itemInputs(
+			'#forge:ingots/wrought_iron'
+			'#minecraft:coals'
+		)
+		.itemOutputs(
+			'thoriumreactors:blasted_iron_ingot'
+		)
+		.duration(120)
+		.EUt(EV)
+	
+  //Thorium Reactors End
   //Create Start
 
   shaped("create:millstone", [" M ", " G ", " Q "], {
